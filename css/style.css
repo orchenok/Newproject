@@ -1,0 +1,179 @@
+body,
+html {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+* {
+    box-sizing: border-box;
+}
+.clearfix {
+    overflow: auto;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+.menu-link {
+    text-decoration: none;
+    color: darkslategrey;
+}
+.home-link {
+    text-decoration: underline overline;
+}
+ li a:hover {
+    text-decoration: underline overline;
+    color: darkorchid;
+
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-header {
+    width: 100%;
+    height: 50px;
+}
+
+.col {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.colum {
+    display: block;
+    width: 40%;
+}
+.content {
+    display: block;
+    width: 80%;
+}
+.section-menu {
+    float: left;
+}
+.section-menu-content {
+        float: right;
+}
+.section-menu > .section-menu-content img {
+    display: block;
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+.central-menu {
+    display: block;
+    position: fixed;
+    width: 20%;
+    float: left;
+    left: 40%;
+    text-align: center;
+    line-height: 3;
+
+}
+.central-menu img {
+    width: 60%;
+}
+.menu-item{
+    list-style: none;
+    padding-left: 0;
+}
+.section-article {
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.section-article > .section-article-content {
+
+}
+.section-article > .section-article-content img {
+    width: 100%;
+}
+.section-article > .section-article-content h1 {
+
+}
+.section-article > .section-article-content p {
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item ul.menu-drop {
+    position: absolute;
+    left: -9999px;
+    list-style: none;
+    border: 1px solid darkslategray;
+    padding: 5px;
+    line-height: 1.4;
+}
+.menu-item li:hover ul.menu-drop{
+    left:70%;
+}
+.article-blok {
+    margin-top: 15px;
+
+}
+.menu-drop {
+
+}
+.section-article a {
+    text-decoration: none;
+    color: black;
+}
+.section-article a:hover {
+    color: darkred;
+}
+.section-article p {
+    border-bottom: 2px dotted black;
+}
+.section-menu-content a:hover {
+
+}
+@media screen and (max-width:900px) {
+    body {
+        font-size: 1rem;
+    }
+    .section-menu {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+    .central-menu {
+        text-align: center;
+        line-height: 3;
+        left: 0;
+        width: 100%;
+        display: block;
+        position: relative;
+        margin: auto;
+    }
+    .central-menu li {
+        display: inline-block;
+        width: 15%;
+    }
+    .central-menu img {
+        width: 50%;
+    }
+    .section-article {
+        width: 100%;
+        text-align: left;
+
+    }
+    .section-article img {
+        display: block;
+        width: 100%;
+    }
+    .menu-drop li {
+        display: block;
+    }
+}
